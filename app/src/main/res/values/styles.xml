@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimarysdk</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarksdk</item>
+        <item name="colorAccent">@color/colorAccentsdk</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+
+        <item name="android:actionMenuTextColor">@color/black</item>
+
+    </style>
+
+
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+
+    <style name="MyCustomThemeDialog" parent="@style/Theme.AppCompat.Dialog.Alert">
+
+        <item name="android:windowBackground">@null</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+
+
+
+
+</resources>

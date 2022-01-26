@@ -1,0 +1,27 @@
+<LinearLayout android:id="@+id/genderLinear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.robotack.robogamification.utilities.CustomFont
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:id="@+id/genderTitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/genderImage"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/ic_female_gender" />
+
+</LinearLayout>

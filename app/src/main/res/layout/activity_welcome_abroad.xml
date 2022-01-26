@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:layout_height="@dimen/_140sdp">
+    </ImageView>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.robotack.robogamification.ui.Activites.WelcomeAbroadActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/back_arrow">
+
+            </ImageView>
+
+            <com.robotack.robogamification.utilities.CustomFont
+                android:id="@+id/tvTitleToolBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+
+            </com.robotack.robogamification.utilities.CustomFont>
+
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/back_arrow"
+                android:visibility="invisible">
+
+            </ImageView>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/onboard_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <com.robotack.robogamification.utilities.CustomFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/titleWelcome"
+                    android:textColor="@color/blue_dark_colorsdk"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold" />
+
+                <com.robotack.robogamification.utilities.CustomFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="-10dp"
+                    android:id="@+id/descWelcome"
+                    android:textColor="@color/blue_dark_colorsdk"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:indeterminateDrawable="@drawable/progress"
+                android:visibility="gone"></ProgressBar>
+
+
+            <com.robotack.robogamification.utilities.CustomFont
+                android:id="@+id/tvNext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/dark_button"
+                android:gravity="center"
+                android:text="@string/start_playing"
+                android:textColor="@color/whitesdk"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+</RelativeLayout>

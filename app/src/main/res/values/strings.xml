@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Gamification</string>
+    <string name="my_rewards">Setup Your Profile</string>
+    <string name="chose_your_gender">Choose your Gender</string>
+
+    <string name="choose_your_avatar">Choose your avatar</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="next">Next</string>
+    <string name="welcome">Welcome Aboard!</string>
+    <string name="welcome_description">This is our first season of gamification, the rules are very simple, complete as much tasks as you can to gain points.</string>
+    <string name="no_user">there is no login user</string>
+
+    <string name="start_playing">Start Playing!</string>
+    <string name="how_toplay">How To Play</string>
+    <string name="down_for_maintenance">We’ll Be Back Soon!</string>
+    <string name="seasons">Seasons</string>
+    <string name="ok__">OK</string>
+    <string name="something_wrong">Something wrong , please try again later</string>
+</resources>

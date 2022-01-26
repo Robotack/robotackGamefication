@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dark_button_transbarent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_marginTop="@dimen/_8sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_weight="1.3"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+        <com.robotack.robogamification.utilities.CustomFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/white_shape_redeem"
+            android:gravity="start"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:text="ENDED"
+            android:textColor="@color/blue_dark_colorsdk"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.robotack.robogamification.utilities.CustomFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="start"
+            android:id="@+id/seasoneTitle"
+            android:textColor="@color/whitesdk"
+            android:textSize="@dimen/_14sdp" />
+
+        <com.robotack.robogamification.utilities.CustomFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="start"
+            android:id="@+id/seaseonDate"
+            android:textColor="@color/whitesdk"
+            android:textSize="@dimen/_9sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.robotack.robogamification.utilities.CustomFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/seasonReward"
+            android:textColor="@color/whitesdk"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold" />
+
+        <com.robotack.robogamification.utilities.CustomFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="POINTS GAINED"
+            android:textColor="@color/whitesdk"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+
+</LinearLayout>

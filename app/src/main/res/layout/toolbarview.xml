@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:elevation="10dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/whitesdk"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:id="@+id/backIcon"
+                    android:src="@drawable/back_arrow">
+
+                </ImageView>
+
+                <com.robotack.robogamification.utilities.CustomFont
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingEnd="@dimen/_40sdp"
+                    android:gravity="center"
+                    android:id="@+id/toolbarTitle"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+
+                </com.robotack.robogamification.utilities.CustomFont>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:background="@drawable/white_shape_redeem"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_25sdp">
+
+
+            <com.robotack.robogamification.utilities.CustomFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:id="@+id/details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"></com.robotack.robogamification.utilities.CustomFont>
+
+
+
+            <com.robotack.robogamification.utilities.CustomFont
+                android:id="@+id/buttonClick"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/light_blue_button"
+                android:gravity="center"
+              android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                android:text="@string/start_playing"
+                android:textColor="@color/whitesdk"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dialog_header"
+           />
+
+        <com.robotack.robogamification.utilities.CustomFont
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:gravity="center"
+            android:textColor="@color/whitesdk"
+            android:textSize="@dimen/_16sdp"></com.robotack.robogamification.utilities.CustomFont>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
