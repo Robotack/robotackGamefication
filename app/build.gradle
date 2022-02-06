@@ -17,6 +17,18 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -26,11 +38,6 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-    }
-    lintOptions {
-        checkReleaseBuilds false
-        abortOnError false
-
     }
 }
 

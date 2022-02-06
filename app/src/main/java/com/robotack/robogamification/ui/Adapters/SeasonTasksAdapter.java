@@ -29,6 +29,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 import java.util.TimeZone;
+import java.util.concurrent.TimeUnit;
 
 public class SeasonTasksAdapter extends RecyclerView.Adapter<SeasonTasksAdapter.CustomViewHolder> {
     Activity mActivity;
@@ -91,12 +92,24 @@ public class SeasonTasksAdapter extends RecyclerView.Adapter<SeasonTasksAdapter.
                 }
                 new CountDownTimer(Integer.parseInt(data.get(position).getRemainingTime().toString()) * 1000, 1000) {
                     public void onTick(long millisUntilFinished) {
+                        long days = TimeUnit.MILLISECONDS.toDays(millisUntilFinished);
+                        millisUntilFinished -= TimeUnit.DAYS.toMillis(days);
 
-                        DateFormat formatter = new SimpleDateFormat("dd:hh:mm", Locale.US);
-                        formatter.setTimeZone(TimeZone.getTimeZone("UTC"));
-                        String text = formatter.format(new Date(millisUntilFinished));
+                        long hours = TimeUnit.MILLISECONDS.toHours(millisUntilFinished);
+                        millisUntilFinished -= TimeUnit.HOURS.toMillis(hours);
+
+                        long minutes = TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished);
+                        millisUntilFinished -= TimeUnit.MINUTES.toMillis(minutes);
+
+                        long seconds = TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished);
+
+
+                        try {
+                            holder.timerCount.setText(days + ":" + hours + ":" + minutes + ":" + seconds);
+                        } catch (Exception e) {
+
+                        }
                         holder.timerCount.setVisibility(View.VISIBLE);
-                        holder.timerCount.setText(text);
                     }
 
                     public void onFinish() {

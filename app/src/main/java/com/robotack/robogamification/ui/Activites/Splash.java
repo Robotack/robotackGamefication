@@ -13,11 +13,11 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-//       GamificationActivity.init(Splash.this, "123123", "en", new GameficationGetTokenListener() {
-//           @Override
-//           public String getToken() {
-//               return "test";
-//           }
-//       });
+        GamificationActivity.init(Splash.this, "123123", "en", "https://robotack.au.ngrok.io/AdminPortal/api/v1.3/", new GameficationGetTokenListener() {
+            @Override
+            public String getToken() {
+                return "test";
+            }
+        });
     }
 }

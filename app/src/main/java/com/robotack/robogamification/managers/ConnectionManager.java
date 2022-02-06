@@ -8,6 +8,7 @@ import android.content.Context;
 import com.google.gson.JsonObject;
 import com.grapesnberries.curllogger.CurlLoggerInterceptor;
 import com.robotack.robogamification.helpers.LanguageHelper;
+import com.robotack.robogamification.ui.Activites.GamificationActivity;
 
 import java.io.IOException;
 import java.util.Map;
@@ -45,7 +46,7 @@ public class ConnectionManager {
 
     public static void GET(Context context, String URl, Map<String, String> Params,String token, final ApiCallResponse callResponse) {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(APIService.BASE_URL)
+                .baseUrl(GamificationActivity.BASEURL)
                 .client(new ConnectionManager().getUserHeader(context))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
@@ -81,7 +82,7 @@ public class ConnectionManager {
 
     public void PostRAW(Context context , JsonObject requestBody, String URl,String token, final ApiCallResponse callResponse) {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(APIService.BASE_URL)
+                .baseUrl(GamificationActivity.BASEURL)
                 .client(new ConnectionManager().getUserHeader(context))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
@@ -165,13 +166,6 @@ public class ConnectionManager {
     }
 
     public interface APIService {
-
-//      public static String BASE_URL = "https://cbu-test.capitalbank.jo:8453/";
-//      public static String BASE_URL = "https://cbu-test.capitalbank.jo:8453/api/v1.3/";
-//      public static String BASE_URL = "https://loyalty-test.capitalbank.jo:8443/api/v1.3/";
-
-         public static String BASE_URL = "https://robotack.au.ngrok.io/AdminPortal/api/v1.3/";
-//         public static String BASE_URL = "https://cbu.capitalbank.jo/api/v1.3/";
 
 
         @Headers({"sdk_version:1","android_os_version:1"})

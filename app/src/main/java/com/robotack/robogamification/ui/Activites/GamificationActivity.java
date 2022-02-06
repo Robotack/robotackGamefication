@@ -29,12 +29,24 @@ public class GamificationActivity extends AppCompatActivity {
     String LanguageValue = "en";
     String userID = null;
     public  static GameficationGetTokenListener getTokenListener ;
+    public static String BASEURL = "";
     ShimmerFrameLayout shimmer_view_container;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         try {
+
+            try {
+                BASEURL = getIntent().getStringExtra("baseURL");
+            } catch (Exception e) {
+                new Utils().showSettingsAlertCustomClick(GamificationActivity.this,"BASEURL ERROR", new AlertClickListener() {
+                    @Override
+                    public void onAlertClick() {
+                        finish();
+                    }
+                });
+            }
+
             try {
                 LanguageValue = getIntent().getStringExtra(sdkLanguage);
             } catch (Exception e) {
@@ -123,11 +135,12 @@ public class GamificationActivity extends AppCompatActivity {
         });
     }
 
-    public static void init(Context context , String customerID , String languageValue , GameficationGetTokenListener listener)
+    public static void init(Context context , String customerID , String languageValue , String baseURL , GameficationGetTokenListener listener)
     {
         setTokenListner(listener);
         Intent in = new Intent(context, GamificationActivity.class);
 
+        in.putExtra("baseURL", baseURL);
         in.putExtra("custumerID", customerID);
         in.putExtra("sdkLanguage", languageValue);
         context.startActivity(in);
