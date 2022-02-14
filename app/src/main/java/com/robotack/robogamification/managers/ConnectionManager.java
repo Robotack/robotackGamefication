@@ -46,7 +46,7 @@ public class ConnectionManager {
 
     public static void GET(Context context, String URl, Map<String, String> Params,String token, final ApiCallResponse callResponse) {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(GamificationActivity.BASEURL)
+                .baseUrl(APIService.BASE_URL)
                 .client(new ConnectionManager().getUserHeader(context))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
@@ -82,7 +82,7 @@ public class ConnectionManager {
 
     public void PostRAW(Context context , JsonObject requestBody, String URl,String token, final ApiCallResponse callResponse) {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(GamificationActivity.BASEURL)
+                .baseUrl(APIService.BASE_URL)
                 .client(new ConnectionManager().getUserHeader(context))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
@@ -138,15 +138,17 @@ public class ConnectionManager {
     }
 
 
-    private  OkHttpClient createOkHttpClient() {
+    private OkHttpClient createOkHttpClient() {
         try {
-            final TrustManager[] trustAllCerts = new TrustManager[] {
+            final TrustManager[] trustAllCerts = new TrustManager[]{
                     new X509TrustManager() {
                         @Override
-                        public void checkClientTrusted(java.security.cert.X509Certificate[] chain, String authType) {}
+                        public void checkClientTrusted(java.security.cert.X509Certificate[] chain, String authType) {
+                        }
 
                         @Override
-                        public void checkServerTrusted(java.security.cert.X509Certificate[] chain, String authType) {}
+                        public void checkServerTrusted(java.security.cert.X509Certificate[] chain, String authType) {
+                        }
 
                         @Override
                         public java.security.cert.X509Certificate[] getAcceptedIssuers() {
@@ -156,7 +158,7 @@ public class ConnectionManager {
             };
             final SSLContext sslContext = SSLContext.getInstance("SSL");
             sslContext.init(null, trustAllCerts, new java.security.SecureRandom());
-            return new OkHttpClient.Builder().addInterceptor(new CurlLoggerInterceptor("CURL_API"))
+            return new OkHttpClient.Builder()
                     .sslSocketFactory(sslContext.getSocketFactory())
                     .hostnameVerifier((hostname, session) -> true)
                     .build();
@@ -165,8 +167,9 @@ public class ConnectionManager {
         }
     }
 
-    public interface APIService {
 
+    public interface APIService {
+        public static String BASE_URL = "https://loyalty-test.capitalbank.jo:8443/api/v1.3/";
 
         @Headers({"sdk_version:1","android_os_version:1"})
         @GET()

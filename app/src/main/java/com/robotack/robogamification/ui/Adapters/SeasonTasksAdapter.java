@@ -103,7 +103,6 @@ public class SeasonTasksAdapter extends RecyclerView.Adapter<SeasonTasksAdapter.
 
                         long seconds = TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished);
 
-
                         try {
                             holder.timerCount.setText(days + ":" + hours + ":" + minutes + ":" + seconds);
                         } catch (Exception e) {

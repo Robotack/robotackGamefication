@@ -4,6 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.381025641025641" />
+        <entry key="app/src/main/res/drawable/select_red_outline.xml" value="0.2295" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/activity_welcome_abroad.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/adapter_choose_gender.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/adapter_tasks.xml" value="0.36041666666666666" />
       </map>
     </option>
   </component>
