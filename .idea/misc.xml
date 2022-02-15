@@ -17,13 +17,20 @@
         <entry key="app/src/main/res/drawable/light_blue_button.xml" value="0.241" />
         <entry key="app/src/main/res/drawable/medal_icon.xml" value="0.241" />
         <entry key="app/src/main/res/drawable/select_red_outline.xml" value="0.2295" />
+        <entry key="app/src/main/res/layout-ar/activity_gamification_layout.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout-ar/activity_loyatli.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/activity_august_season.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/activity_choose_gender.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/activity_gamification_layout.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/activity_loyatli.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/activity_maintance_page.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/activity_seasons.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/activity_welcome_abroad.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/adapter_choose_gender.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/adapter_season.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/adapter_tasks.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/dialog.xml" value="0.36041666666666666" />
       </map>
     </option>
   </component>

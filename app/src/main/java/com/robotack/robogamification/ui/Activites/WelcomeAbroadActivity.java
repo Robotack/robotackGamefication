@@ -13,6 +13,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.robotack.robogamification.R;
+import com.robotack.robogamification.helpers.LanguageHelper;
 import com.robotack.robogamification.managers.ApiCallResponse;
 import com.robotack.robogamification.managers.BusinessManager;
 import com.robotack.robogamification.models.AlertClickListener;
@@ -44,6 +45,9 @@ public class WelcomeAbroadActivity extends AppCompatActivity {
                 finish();
             }
         });
+        if (LanguageHelper.getCurrentLanguage(this).equals("ar")) {
+            ivArrow.setScaleX(-1);
+        }
         infoModel = (InfoModel) Utils.getSharedPreferencesObject(WelcomeAbroadActivity.this, "data", InfoModel.class);
         titleWelcome = findViewById(R.id.titleWelcome);
         descWelcome = findViewById(R.id.descWelcome);

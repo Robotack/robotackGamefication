@@ -56,7 +56,7 @@ public class SeasonTasksAdapter extends RecyclerView.Adapter<SeasonTasksAdapter.
             }
         });
         if (data.get(position).getTaskStatus().toString().equalsIgnoreCase("AVAILABLE")) {
-            holder.verfyButton.setText("Verify");
+            holder.verfyButton.setText(R.string.verify_gamification);
             holder.statusImage.setVisibility(View.INVISIBLE);
             holder.verfyTxt.setVisibility(View.INVISIBLE);
         } else if (data.get(position).getTaskStatus().toString().equalsIgnoreCase("COMPLETED")) {
@@ -65,7 +65,7 @@ public class SeasonTasksAdapter extends RecyclerView.Adapter<SeasonTasksAdapter.
             holder.statusImage.setImageResource(R.drawable.ic_complete);
             holder.verfyTxt.setVisibility(View.INVISIBLE);
         } else if (data.get(position).getTaskStatus().toString().equalsIgnoreCase("VERIFYING")) {
-            holder.verfyButton.setText("VERIFYING..");
+            holder.verfyButton.setText(R.string.verifing_gamification);
             holder.statusImage.setVisibility(View.INVISIBLE);
             holder.verfyTxt.setVisibility(View.VISIBLE);
         } else if (data.get(position).getTaskStatus().toString().equalsIgnoreCase("EXPIRED")) {
@@ -114,7 +114,7 @@ public class SeasonTasksAdapter extends RecyclerView.Adapter<SeasonTasksAdapter.
             @Override
             public void onClick(View v) {
                 if (data.get(position).getTaskStatus().toString().equalsIgnoreCase("AVAILABLE")) {
-                    holder.verfyButton.setText("VERIFYING..");
+                    holder.verfyButton.setText(R.string.verifing_gamification);
                     checkTask.checkTask(data.get(position).getTaskId().toString());
                     holder.verfyTxt.setVisibility(View.VISIBLE);
                 }

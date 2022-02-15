@@ -73,7 +73,7 @@
                             android:layout_gravity="start|center_vertical"
                             android:layout_marginStart="@dimen/_3sdp"
                             android:gravity="start|center_vertical"
-                            android:text="ACTIVE"
+                            android:text="@string/active_season_tasks"
                             android:textColor="@color/blue_dark_colorsdk"
                             android:textSize="@dimen/_12sdp" />
                     </LinearLayout>

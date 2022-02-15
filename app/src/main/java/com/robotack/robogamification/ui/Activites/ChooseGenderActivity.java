@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.robotack.robogamification.R;
+import com.robotack.robogamification.helpers.LanguageHelper;
 import com.robotack.robogamification.managers.ApiCallResponse;
 import com.robotack.robogamification.managers.BusinessManager;
 import com.robotack.robogamification.models.AlertClickListener;
@@ -33,6 +34,9 @@ public class ChooseGenderActivity extends AppCompatActivity implements SelectGen
         setContentView(R.layout.activity_choose_gender);
         ImageView ivArrow;
         ivArrow = findViewById(R.id.ivArrow);
+        if (LanguageHelper.getCurrentLanguage(this).equals("ar")) {
+            ivArrow.setScaleX(-1);
+        }
         ivArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

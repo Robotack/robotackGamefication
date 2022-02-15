@@ -18,6 +18,7 @@ import com.bumptech.glide.Glide;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.robotack.robogamification.R;
 import com.robotack.robogamification.helpers.CheckTask;
+import com.robotack.robogamification.helpers.LanguageHelper;
 import com.robotack.robogamification.managers.ApiCallResponse;
 import com.robotack.robogamification.managers.BusinessManager;
 import com.robotack.robogamification.models.AlertClickListener;
@@ -74,6 +75,9 @@ public class SeasonDetailsActivity extends AppCompatActivity implements CheckTas
                 finish();
             }
         });
+        if (LanguageHelper.getCurrentLanguage(this).equals("ar")) {
+            ivArrow.setScaleX(-1);
+        }
         howToplay = findViewById(R.id.howToplay);
         howToplay.setOnClickListener(new View.OnClickListener() {
             @Override

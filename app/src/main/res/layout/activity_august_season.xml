@@ -71,6 +71,7 @@
         android:layout_height="match_parent"
         android:layout_marginStart="@dimen/_15sdp"
         android:layout_marginEnd="@dimen/_15sdp"
+
         android:orientation="vertical">
 
         <RelativeLayout
@@ -110,7 +111,7 @@
                     <com.robotack.robogamification.utilities.CustomFont
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Complete Task"
+                        android:text="@string/gained_completed_tasks"
                         android:textColor="@color/whitesdk"
                         android:textSize="@dimen/_9sdp" />
                 </LinearLayout>
@@ -161,7 +162,7 @@
                     <com.robotack.robogamification.utilities.CustomFont
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Gained Point"
+                        android:text="@string/gained_point_gamification"
                         android:textColor="@color/whitesdk"
                         android:textSize="@dimen/_9sdp" />
                 </LinearLayout>
@@ -209,6 +210,7 @@
         android:background="#fff"
         android:orientation="vertical"
         app:shimmer_direction="left_to_right"
+
         app:shimmer_highlight_alpha="0.4"
         app:shimmer_colored="false"
         app:shimmer_base_alpha="1"

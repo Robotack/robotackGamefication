@@ -24,7 +24,7 @@
             android:gravity="start"
             android:paddingStart="@dimen/_10sdp"
             android:paddingEnd="@dimen/_10sdp"
-            android:text="ENDED"
+            android:text="@string/ended_season_tasks"
             android:textColor="@color/blue_dark_colorsdk"
             android:textSize="@dimen/_12sdp" />
 
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="POINTS GAINED"
+            android:text="@string/gained_point_gamification"
             android:textColor="@color/whitesdk"
             android:textSize="@dimen/_10sdp" />
     </LinearLayout>

@@ -1,16 +1,23 @@
 <resources>
-    <string name="app_name_gamification">Gamification</string>
+    <string name="gamification_app_name">Gamification</string>
     <string name="my_rewards_gamification">تسجيل الملف الشخصي</string>
-    <string name="chose_your_gender_gamification">Choose your Gender</string>
-    <string name="choose_your_avatar_gamification">Choose your avatar</string>
+    <string name="chose_your_gender_gamification">إختر الجنس</string>
+    <string name="choose_your_avatar_gamification">قم بإعداد ملف التعريف الخاص بك</string>
     <string name="next_gamification">التالي</string>
     <string name="welcome_gamification">Welcome Aboard!</string>
     <string name="welcome_description_gamification">This is our first season of gamification, the rules are very simple, complete as much tasks as you can to gain points.</string>
-    <string name="start_playing_gamification">إبدا اللعب</string>
+    <string name="start_playing_gamification">إبدأ اللعب</string>
     <string name="how_toplay_gamification">كيفية اللعب</string>
     <string name="ok___gamification">موافق</string>
-    <string name="seasons_gamification">Seasons</string>
+    <string name="seasons_gamification">مواسم</string>
     <string name="no_user_gamification">لا يوجد مستخدم</string>
     <string name="down_for_maintenance_gamification">سوف نعود قريبا!</string>
     <string name="something_wrong_gamification">حدث خطآ يرجى المحاولة لاحقا</string>
+    <string name="gained_point_gamification">النقاط المكتسبة</string>
+    <string name="gained_completed_tasks">المهام المنجزة</string>
+    <string name="active_season_tasks">فعال</string>
+    <string name="ended_season_tasks">منتهي</string>
+    <string name="verify_gamification">تحقق</string>
+    <string name="verifing_gamification">يتم التحقق الأن...</string>
+    <string name="wait_till_gamification">انتظر حتى نهاية اليوم</string>
 </resources>

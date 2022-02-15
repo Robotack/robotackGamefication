@@ -11,24 +11,24 @@ import com.robotack.robogamification.helpers.GameficationGetTokenListener;
 
 public class Splash extends AppCompatActivity {
 
-//    EditText customerID;
+    EditText customerID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-//        customerID = (EditText) findViewById(R.id.customerID);
-//
-//        findViewById(R.id.startBtn).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                GamificationActivity.init(Splash.this,customerID.getText().toString() , "en", new GameficationGetTokenListener() {
-//                    @Override
-//                    public String getToken() {
-//                        return "test";
-//                    }
-//                });
-//            }
-//        });
+        customerID = (EditText) findViewById(R.id.customerID);
+
+        findViewById(R.id.startBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GamificationActivity.init(Splash.this,customerID.getText().toString() , "en", new GameficationGetTokenListener() {
+                    @Override
+                    public String getToken() {
+                        return "test";
+                    }
+                });
+            }
+        });
 
     }
 }
