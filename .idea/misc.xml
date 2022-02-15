@@ -4,7 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.381025641025641" />
+        <entry key="app/src/main/res/drawable/background_progress.xml" value="0.241" />
+        <entry key="app/src/main/res/drawable/background_white_border_fill_red.xml" value="0.241" />
+        <entry key="app/src/main/res/drawable/black_edittext.xml" value="0.241" />
+        <entry key="app/src/main/res/drawable/circle_blue.xml" value="0.241" />
+        <entry key="app/src/main/res/drawable/circle_green.xml" value="0.241" />
+        <entry key="app/src/main/res/drawable/claim_arrow.xml" value="0.241" />
+        <entry key="app/src/main/res/drawable/dark_button_transbarent.xml" value="0.241" />
+        <entry key="app/src/main/res/drawable/gray_pager_shape.xml" value="0.241" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.241" />
+        <entry key="app/src/main/res/drawable/ic_point.xml" value="0.241" />
+        <entry key="app/src/main/res/drawable/light_blue_button.xml" value="0.241" />
+        <entry key="app/src/main/res/drawable/medal_icon.xml" value="0.241" />
         <entry key="app/src/main/res/drawable/select_red_outline.xml" value="0.2295" />
+        <entry key="app/src/main/res/layout/activity_maintance_page.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/activity_welcome_abroad.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/adapter_choose_gender.xml" value="0.36041666666666666" />

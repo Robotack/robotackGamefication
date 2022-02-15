@@ -17,8 +17,6 @@ import com.robotack.robogamification.models.AlertClickListener;
 import com.robotack.robogamification.models.GenderModel;
 import com.robotack.robogamification.models.SelectGenderListener;
 import com.robotack.robogamification.ui.Adapters.ChooseAvatarAdapter;
-import com.robotack.robogamification.ui.Adapters.ChooseGenderAdapter;
-import com.robotack.robogamification.utilities.CustomFont;
 import com.robotack.robogamification.R;
 import com.robotack.robogamification.utilities.Utils;
 
@@ -45,7 +43,7 @@ public class SetupProfileActivity extends AppCompatActivity implements SelectGen
             }
         });
         tvTitleToolBar = findViewById(R.id.tvTitleToolBar);
-        tvTitleToolBar.setText(R.string.my_rewards);
+        tvTitleToolBar.setText(R.string.my_rewards_gamification);
         tvNext=findViewById(R.id.tvNext);
         tvNext.setEnabled(false);
         shimmer_view_container = findViewById(R.id.shimmer_view_container);
@@ -92,12 +90,12 @@ public class SetupProfileActivity extends AppCompatActivity implements SelectGen
                     }
                 }catch (Exception e)
                 {
-                    new Utils().showSettingsAlert(SetupProfileActivity.this,getString(R.string.something_wrong));
+                    new Utils().showSettingsAlert(SetupProfileActivity.this,getString(R.string.something_wrong_gamification));
                 }
             }
             @Override
             public void onFailure(String errorResponse) {
-                new Utils().showSettingsAlert(SetupProfileActivity.this,getString(R.string.something_wrong));
+                new Utils().showSettingsAlert(SetupProfileActivity.this,getString(R.string.something_wrong_gamification));
 
             }
         });

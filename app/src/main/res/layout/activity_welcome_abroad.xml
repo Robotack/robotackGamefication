@@ -9,7 +9,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:background="@drawable/background"
+        android:background="@drawable/background_gamification"
         android:layout_height="@dimen/_140sdp">
     </ImageView>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -136,7 +136,7 @@
                 android:layout_marginBottom="@dimen/_20sdp"
                 android:background="@drawable/dark_button"
                 android:gravity="center"
-                android:text="@string/start_playing"
+                android:text="@string/start_playing_gamification"
                 android:textColor="@color/whitesdk"
                 android:textSize="@dimen/_14sdp" />
 

@@ -110,14 +110,14 @@ public class WelcomeAbroadActivity extends AppCompatActivity {
                     }
                 } catch (Exception e) {
                     progressBar.setVisibility(View.GONE);
-                    new Utils().showSettingsAlert(WelcomeAbroadActivity.this, getString(R.string.something_wrong));
+                    new Utils().showSettingsAlert(WelcomeAbroadActivity.this, getString(R.string.something_wrong_gamification));
                 }
             }
 
             @Override
             public void onFailure(String errorResponse) {
                 progressBar.setVisibility(View.GONE);
-                new Utils().showSettingsAlert(WelcomeAbroadActivity.this, getString(R.string.something_wrong));
+                new Utils().showSettingsAlert(WelcomeAbroadActivity.this, getString(R.string.something_wrong_gamification));
 
             }
         });

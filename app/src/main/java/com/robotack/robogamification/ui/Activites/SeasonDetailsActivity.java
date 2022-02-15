@@ -3,18 +3,12 @@ package com.robotack.robogamification.ui.Activites;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Base64;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -30,7 +24,6 @@ import com.robotack.robogamification.models.AlertClickListener;
 import com.robotack.robogamification.models.CheckTaskModel;
 import com.robotack.robogamification.models.SeasonDetailsModel;
 import com.robotack.robogamification.models.SeasonModel;
-import com.robotack.robogamification.ui.Adapters.SeasonHistoryAdapter;
 import com.robotack.robogamification.ui.Adapters.SeasonTasksAdapter;
 import com.robotack.robogamification.utilities.Utils;
 
@@ -85,7 +78,7 @@ public class SeasonDetailsActivity extends AppCompatActivity implements CheckTas
         howToplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAlertPopUp(getString(R.string.how_toplay),howToplayText,getString(R.string.start_playing));
+                showAlertPopUp(getString(R.string.how_toplay_gamification),howToplayText,getString(R.string.start_playing_gamification));
             }
         });
         swipeToRefesh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -168,13 +161,13 @@ public class SeasonDetailsActivity extends AppCompatActivity implements CheckTas
                         }
                     }
                 } catch (Exception e) {
-                    new Utils().showSettingsAlert(SeasonDetailsActivity.this, getString(R.string.something_wrong));
+                    new Utils().showSettingsAlert(SeasonDetailsActivity.this, getString(R.string.something_wrong_gamification));
                 }
             }
 
             @Override
             public void onFailure(String errorResponse) {
-                new Utils().showSettingsAlert(SeasonDetailsActivity.this, getString(R.string.something_wrong));
+                new Utils().showSettingsAlert(SeasonDetailsActivity.this, getString(R.string.something_wrong_gamification));
 
             }
         });

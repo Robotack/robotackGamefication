@@ -36,7 +36,7 @@ public class Utils {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
         alertDialog.setTitle("");
         alertDialog.setMessage(message);
-        alertDialog.setPositiveButton(Html.fromHtml(context.getResources().getString(R.string.ok__)), new DialogInterface.OnClickListener() {
+        alertDialog.setPositiveButton(Html.fromHtml(context.getResources().getString(R.string.ok___gamification)), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 alertClickListener.onAlertClick();
             }
@@ -48,7 +48,7 @@ public class Utils {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
         alertDialog.setTitle("");
         alertDialog.setMessage(message);
-        alertDialog.setPositiveButton(Html.fromHtml(context.getResources().getString(R.string.ok__)), new DialogInterface.OnClickListener() {
+        alertDialog.setPositiveButton(Html.fromHtml(context.getResources().getString(R.string.ok___gamification)), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
             }

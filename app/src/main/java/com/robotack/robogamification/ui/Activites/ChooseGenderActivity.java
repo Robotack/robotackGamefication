@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
@@ -17,7 +16,6 @@ import com.robotack.robogamification.managers.ApiCallResponse;
 import com.robotack.robogamification.managers.BusinessManager;
 import com.robotack.robogamification.models.AlertClickListener;
 import com.robotack.robogamification.models.GenderModel;
-import com.robotack.robogamification.models.LoginUserModel;
 import com.robotack.robogamification.models.SelectGenderListener;
 import com.robotack.robogamification.ui.Adapters.ChooseGenderAdapter;
 import com.robotack.robogamification.utilities.Utils;
@@ -43,7 +41,7 @@ public class ChooseGenderActivity extends AppCompatActivity implements SelectGen
         });
         shimmer_view_container = findViewById(R.id.shimmer_view_container);
         tvTitleToolBar = findViewById(R.id.tvTitleToolBar);
-        tvTitleToolBar.setText(R.string.chose_your_gender);
+        tvTitleToolBar.setText(R.string.chose_your_gender_gamification);
         tvNext = findViewById(R.id.tvNext);
         tvNext.setEnabled(false);
         genderReyclerView = findViewById(R.id.genderReyclerView);
@@ -88,12 +86,12 @@ public class ChooseGenderActivity extends AppCompatActivity implements SelectGen
                     }
                 }catch (Exception e)
                 {
-                    new Utils().showSettingsAlert(ChooseGenderActivity.this,getString(R.string.something_wrong));
+                    new Utils().showSettingsAlert(ChooseGenderActivity.this,getString(R.string.something_wrong_gamification));
                 }
             }
             @Override
             public void onFailure(String errorResponse) {
-                new Utils().showSettingsAlert(ChooseGenderActivity.this,getString(R.string.something_wrong));
+                new Utils().showSettingsAlert(ChooseGenderActivity.this,getString(R.string.something_wrong_gamification));
 
             }
         });

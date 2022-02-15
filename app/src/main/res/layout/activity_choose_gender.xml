@@ -9,7 +9,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:background="@drawable/background"
+        android:background="@drawable/background_gamification"
         android:layout_height="@dimen/_140sdp">
     </ImageView>
 
@@ -25,7 +25,7 @@
         android:background="@drawable/gray_button"
         android:gravity="center"
         android:layout_alignParentBottom="true"
-        android:text="@string/next"
+        android:text="@string/next_gamification"
         android:textColor="@color/whitesdk"
         android:textSize="@dimen/_12sdp" />
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -53,7 +53,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/_10sdp"
             android:gravity="center_horizontal"
-            android:text="@string/chose_your_gender"
+            android:text="@string/chose_your_gender_gamification"
             android:textColor="@color/black"
             android:visibility="invisible"
             android:textSize="@dimen/_12sdp" />

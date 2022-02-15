@@ -12,7 +12,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:background="@drawable/background"
+        android:background="@drawable/background_gamification"
         android:layout_height="@dimen/_140sdp">
     </ImageView>
 <LinearLayout

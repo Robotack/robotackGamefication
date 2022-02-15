@@ -18,9 +18,7 @@ import com.robotack.robogamification.R;
 import com.robotack.robogamification.managers.ApiCallResponse;
 import com.robotack.robogamification.managers.BusinessManager;
 import com.robotack.robogamification.models.AlertClickListener;
-import com.robotack.robogamification.models.GenderModel;
 import com.robotack.robogamification.models.SeasonModel;
-import com.robotack.robogamification.ui.Adapters.ChooseGenderAdapter;
 import com.robotack.robogamification.ui.Adapters.SeasonHistoryAdapter;
 import com.robotack.robogamification.utilities.Utils;
 
@@ -61,7 +59,7 @@ public class SeasonsActivity extends AppCompatActivity {
         seasonName = findViewById(R.id.seasonName);
         seasonDate = findViewById(R.id.seasonDate);
         tvTitleToolBar = findViewById(R.id.tvTitleToolBar);
-        tvTitleToolBar.setText(R.string.seasons);
+        tvTitleToolBar.setText(R.string.seasons_gamification);
         getSesonData();
         activeSeasonClick.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,13 +122,13 @@ public class SeasonsActivity extends AppCompatActivity {
                         }
                     }
                 } catch (Exception e) {
-                    new Utils().showSettingsAlert(SeasonsActivity.this, getString(R.string.something_wrong));
+                    new Utils().showSettingsAlert(SeasonsActivity.this, getString(R.string.something_wrong_gamification));
                 }
             }
 
             @Override
             public void onFailure(String errorResponse) {
-                new Utils().showSettingsAlert(SeasonsActivity.this, getString(R.string.something_wrong));
+                new Utils().showSettingsAlert(SeasonsActivity.this, getString(R.string.something_wrong_gamification));
 
             }
         });

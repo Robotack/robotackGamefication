@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="@dimen/_20sdp"
-            android:text="@string/down_for_maintenance"
+            android:text="@string/down_for_maintenance_gamification"
             android:textColor="@color/colorAccentsdk"
             android:textSize="22sp"
             />

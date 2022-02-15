@@ -57,7 +57,7 @@ public class GamificationActivity extends AppCompatActivity {
         try {
             userID = getIntent().getStringExtra(PrefConstant.custumerID);
             if (userID == null) {
-                new Utils().showSettingsAlertCustomClick(GamificationActivity.this, getString(R.string.no_user), new AlertClickListener() {
+                new Utils().showSettingsAlertCustomClick(GamificationActivity.this, getString(R.string.no_user_gamification), new AlertClickListener() {
                     @Override
                     public void onAlertClick() {
                         finish();
@@ -70,7 +70,7 @@ public class GamificationActivity extends AppCompatActivity {
                 getGameInfo();
             }
         } catch (Exception e) {
-            new Utils().showSettingsAlertCustomClick(GamificationActivity.this, getString(R.string.no_user), new AlertClickListener() {
+            new Utils().showSettingsAlertCustomClick(GamificationActivity.this, getString(R.string.no_user_gamification), new AlertClickListener() {
                 @Override
                 public void onAlertClick() {
                     finish();
@@ -111,13 +111,13 @@ public class GamificationActivity extends AppCompatActivity {
                         }
                     }
                 } catch (Exception e) {
-                    new Utils().showSettingsAlert(GamificationActivity.this, getString(R.string.something_wrong));
+                    new Utils().showSettingsAlert(GamificationActivity.this, getString(R.string.something_wrong_gamification));
                 }
             }
 
             @Override
             public void onFailure(String errorResponse) {
-                new Utils().showSettingsAlert(GamificationActivity.this, getString(R.string.something_wrong));
+                new Utils().showSettingsAlert(GamificationActivity.this, getString(R.string.something_wrong_gamification));
 
             }
         });

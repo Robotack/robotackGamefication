@@ -1,12 +1,8 @@
 package com.robotack.robogamification.ui.Adapters;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.ColorDrawable;
 import android.os.CountDownTimer;
-import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,15 +16,8 @@ import com.bumptech.glide.Glide;
 import com.robotack.robogamification.R;
 import com.robotack.robogamification.helpers.CheckTask;
 import com.robotack.robogamification.models.SeasonDetailsModel;
-import com.robotack.robogamification.models.SeasonModel;
-import com.robotack.robogamification.ui.Activites.SeasonDetailsActivity;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
-import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 public class SeasonTasksAdapter extends RecyclerView.Adapter<SeasonTasksAdapter.CustomViewHolder> {
@@ -63,7 +52,7 @@ public class SeasonTasksAdapter extends RecyclerView.Adapter<SeasonTasksAdapter.
         holder.popup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAlertPopUp(data.get(position).getTitle().toString(), data.get(position).getDescription().toString(), mActivity.getString(R.string.start_playing));
+                showAlertPopUp(data.get(position).getTitle().toString(), data.get(position).getDescription().toString(), mActivity.getString(R.string.start_playing_gamification));
             }
         });
         if (data.get(position).getTaskStatus().toString().equalsIgnoreCase("AVAILABLE")) {
