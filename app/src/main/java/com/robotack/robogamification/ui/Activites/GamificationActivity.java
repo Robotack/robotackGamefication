@@ -51,7 +51,7 @@ public class GamificationActivity extends AppCompatActivity {
             LanguageValue = "en";
         }
         new Utils().updateLangauge(this);
-        setContentView(R.layout.activity_loyatli);
+        setContentView(R.layout.activity_gamification_layout);
         shimmer_view_container = findViewById(R.id.shimmer_view_container);
         new Utils().setUserID(userID, this);
         try {

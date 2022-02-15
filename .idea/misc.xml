@@ -17,6 +17,8 @@
         <entry key="app/src/main/res/drawable/light_blue_button.xml" value="0.241" />
         <entry key="app/src/main/res/drawable/medal_icon.xml" value="0.241" />
         <entry key="app/src/main/res/drawable/select_red_outline.xml" value="0.2295" />
+        <entry key="app/src/main/res/layout-ar/activity_loyatli.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/activity_loyatli.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/activity_maintance_page.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/activity_welcome_abroad.xml" value="0.36041666666666666" />
