@@ -47,7 +47,7 @@ public class SetupProfileActivity extends AppCompatActivity implements SelectGen
             }
         });
         tvTitleToolBar = findViewById(R.id.tvTitleToolBar);
-        tvTitleToolBar.setText(R.string.my_rewards_gamification);
+        tvTitleToolBar.setText(R.string.choose_your_avatar_gamification);
         tvNext=findViewById(R.id.tvNext);
         tvNext.setEnabled(false);
         shimmer_view_container = findViewById(R.id.shimmer_view_container);

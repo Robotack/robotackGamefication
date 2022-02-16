@@ -9,8 +9,8 @@
     <string name="welcome_description_gamification">This is our first season of gamification, the rules are very simple, complete as much tasks as you can to gain points.</string>
     <string name="no_user_gamification">there is no login user</string>
 
-    <string name="start_playing_gamification">Start Playing!</string>
-    <string name="how_toplay_gamification">How To Play</string>
+    <string name="start_playing_gamification">Start Challenge!</string>
+    <string name="how_toplay_gamification">How to Challenge</string>
     <string name="down_for_maintenance_gamification">We’ll Be Back Soon!</string>
     <string name="seasons_gamification">Seasons</string>
     <string name="ok___gamification">OK</string>
